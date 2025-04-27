@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neighbourhood Friendly Apps and Websites</title>
+    <style>
+        :root {
+            --primary: #2d3142;
+            --secondary: #4f5d75;
+            --accent: #ef8354;
+            --light: #f5f5f5;
+            --dark: #333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--primary);
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .creator {
+            margin-top: 2rem;
+            font-style: italic;
+        }
+        
+        section {
+            padding: 5rem 0;
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        section:nth-child(even) {
+            background-color: white;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--secondary);
+        }
+        
+        .quote {
+            font-size: 2rem;
+            font-weight: 300;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            color: var(--secondary);
+            position: relative;
+            padding: 2rem;
+        }
+        
+        .quote::before {
+            content: '"';
+            font-size: 5rem;
+            position: absolute;
+            left: 0;
+            top: -1rem;
+            color: var(--accent);
+            opacity: 0.3;
+        }
+        
+        .highlight {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        
+        .cta {
+            background-color: var(--accent);
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            display: inline-block;
+            margin-top: 2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        footer {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 3rem;
+        }
+        
+        .feature {
+            flex-basis: 30%;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .scroll-reveal {
+            opacity: 0;
+            transition: all 1s ease;
+            transform: translateY(20px);
+        }
+        
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .emoji {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .quote {
+                font-size: 1.5rem;
+            }
+            .feature {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Neighbourhood Friendly Apps and Websites</h1>
+            <p class="tagline">Connecting communities, one unnecessarily complicated app at a time.</p>
+            <p class="creator">Created by Salekh Mahmood</p>
+        </div>
+    </header>
+    
+    <section>
+        <div class="container">
+            <div class="quote scroll-reveal">
+                The things I do for <span class="highlight">content</span>.
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <h2 class="scroll-reveal">Is it worth it?</h2>
+            <p class="quote scroll-reveal">
+                Spending countless hours developing apps that no one asked for, just to see the look of mild confusion on people's faces? <span class="highlight">Absolutely.</span>
+            </p>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <h2 class="scroll-reveal">Who knows?</h2>
+            <p class="quote scroll-reveal">
+                Maybe this will go viral. Maybe it'll get three views. Maybe my mom will finally be proud of me. <span class="highlight">Let's see!</span>
+            </p>
+            <div class="emoji scroll-reveal">🤷‍♂️</div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <h2 class="scroll-reveal">Our "Revolutionary" Features</h2>
+            <div class="features">
+                <div class="feature scroll-reveal">
+                    <div class="emoji">🔍</div>
+                    <h3 class="feature-title">Find Anything</h3>
+                    <p>Except your motivation, dignity, or the will to stop making these videos.</p>
+                </div>
+                <div class="feature scroll-reveal">
+                    <div class="emoji">🏠</div>
+                    <h3 class="feature-title">Connect Locally</h3>
+                    <p>Because talking to your actual neighbors is so 1990s.</p>
+                </div>
+                <div class="feature scroll-reveal">
+                    <div class="emoji">📱</div>
+                    <h3 class="feature-title">Mobile Ready</h3>
+                    <p>Works on all devices. Unlike my work-life balance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <div class="quote scroll-reveal">
+                For the sake of this content video, I've sacrificed <span class="highlight">sleep</span>, <span class="highlight">sanity</span>, and several <span class="highlight">perfectly good weekends</span>.
+            </div>
+            <div class="emoji scroll-reveal">😅</div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <h2 class="scroll-reveal">Join Our Journey</h2>
+            <p class="quote scroll-reveal">
+                Because misery loves company, and my analytics need the boost.
+            </p>
+            <div class="text-center">
+                <a href="#" class="cta scroll-reveal">Subscribe or Whatever</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Salekh Mahmood | The Most Serious Project Ever</p>
+            <p>No neighborhoods were harmed in the making of this landing page.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll reveal animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollRevealElements = document.querySelectorAll('.scroll-reveal');
+            
+            function checkVisibility() {
+                scrollRevealElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const elementVisible = 150;
+                    
+                    if (elementTop < window.innerHeight - elementVisible) {
+                        element.classList.add('visible');
+                    }
+                });
+            }
+            
+            // Initial check
+            checkVisibility();
+            
+            // Check on scroll
+            window.addEventListener('scroll', checkVisibility);
+        });
+    </script>
+</body>
+</html>
